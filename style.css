@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+body{
+  background:linear-gradient(135deg, rgb(0, 0, 255,0.8),rgb(255, 165, 0,0.8));
+  width: 100%;
+  height: 100vh;
+  
+}
+.main-section{
+  background: linear-gradient(135deg,rgb(255, 165, 0,0.8), rgb(0, 0, 255,0.8));
+  max-width: 50rem;
+  margin: 5rem auto 0;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0.2rem 0.2rem 2rem 0.5rem black;
+}
+.main-section .input{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  gap: 10px;
+}
+.main-section .input input{
+  width: calc(100% - 10rem);
+  height: 100%;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  border-radius:1rem ;
+  border: none;
+  outline: none;
+
+}
+.main-section .input input:focus{
+  border: 1px solid rgb(82, 82, 82);
+}
+.main-section .input button{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  width: 10rem;
+  border-radius: 1rem;
+  border: none;
+ background:linear-gradient(35deg, yellow,pink);
+  
+}
+.main-section .input button:hover{
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem orange;
+  cursor: pointer;
+}
+.main-section .control{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+.main-section .control .control-options{
+  padding: 0.5rem 0;
+  width: calc(100% - 15rem);
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-section .control .control-options span{
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: blue;
+  width: 10rem;
+ 
+}
+.main-section .control span:hover{
+  cursor: pointer;
+}
+.main-section .control .active{
+  border-radius: 1rem;
+  background:linear-gradient(35deg, orange,pink, blue);
+}
+.main-section  button{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-section .control button{
+  display: block;
+  padding: 0.8rem 1rem;
+  width: 10rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(35deg, yellow,pink);
+  color: blue;
+  border-radius: 0.5rem;
+}
+.main-section .task-list{
+  
+  background-color: white;
+  border-radius: 2rem;
+  height: 35rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 0.5rem;
+  gap: 1.5rem;
+}
+.main-section .task-list .task{
+  position: relative;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:linear-gradient(35deg, orange,pink, blue);
+  
+}
+
+.main-section .task-list .task .data{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 2rem;
+}
+.main-section .task-list .task .data p{
+  font-size: 2rem;
+}
+.main-section .task-list .task i{
+ font-size: 2rem;
+ color: white;
+}
+.main-section .task-list .task i:hover{
+  cursor: pointer;
+}
+

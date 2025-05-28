@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-section">
+    <div class="input">
+      <input type="text" placeholder="Add Your Task" id="input-task">
+      <button onclick="handleData()">Add</button>
+    </div>
+    <div class="control">
+      <div class="control-options">
+        <span class="active" onclick="alldatahandle(); handleNavClick(this);">All</span>
+        <span onclick="handlependingdata(); handleNavClick(this);">Pending</span>
+        <span onclick="handlecompletedata(); handleNavClick(this);">Complete</span>
+      </div>
+      <button onclick="handleclearall()">Clear All</button>
+    </div>
+    <div class="task-list" id="task-list">
+
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
